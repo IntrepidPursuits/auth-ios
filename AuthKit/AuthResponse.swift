@@ -8,11 +8,11 @@
 
 import Genome
 
-struct AuthResponse: MappableObject {
+public struct AuthResponse: MappableObject {
     let userId: String
     let token: String
 
-    init(map: Map) throws {
+    public init(map: Map) throws {
         userId = try map.extract("user_id")
         token = try map.extract("authentication_token")
     }

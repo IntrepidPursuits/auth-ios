@@ -10,17 +10,17 @@ import Foundation
 import Intrepid
 import RxSwift
 
-protocol AuthAPIClient {
+public protocol AuthAPIClient {
     func login(email: String, password: String, completion: (Result<AuthResponse>) -> Void)
 }
 
-enum AuthError: Error {
+internal enum AuthError: Error {
     case emptyFields
     case invalidEmail
     case apiClientError(Error)
 }
 
-struct LoginViewModel {
+public struct LoginViewModel {
 
     var apiClient: AuthAPIClient!
     var userManager: UserManager = .shared
@@ -32,6 +32,10 @@ struct LoginViewModel {
         return Observable.combineLatest(email.asObservable(), password.asObservable()) { (email, password) in
             return email != nil && password != nil
         }
+    }
+
+    public init(apiClient: AuthAPIClient) {
+        self.apiClient = apiClient
     }
 
     func attemptLogIn(completion: (Result<Void>) -> Void) {

@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import Intrepid
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+public class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -24,16 +24,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - Lifecycle
 
-    init(viewModel: LoginViewModel) {
+    public init(viewModel: LoginViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError()
     }
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         setupTextFields()
         setupObservers()
@@ -48,9 +48,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
         emailTextField.placeholder = "Email"
         emailTextField.returnKeyType = .next
+        emailTextField.keyboardType = .emailAddress
 
         passwordTextField.placeholder = "Password"
         passwordTextField.returnKeyType = .go
+        passwordTextField.isSecureTextEntry = true
     }
 
     func setupObservers() {

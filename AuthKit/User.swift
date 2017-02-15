@@ -10,12 +10,12 @@ import Foundation
 
 // MARK: - User
 
-struct User {
+public struct User {
     let identifier: String
     let email: String
 }
 
-struct AuthenticationUser {
+public struct AuthenticationUser {
     let email: String
     let password: String
 }

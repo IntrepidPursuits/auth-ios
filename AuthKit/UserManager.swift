@@ -9,7 +9,7 @@
 import Intrepid
 import KeychainAccess
 
-class UserManager {
+public class UserManager {
 
     static let shared = UserManager(keychainService: "shared")
 

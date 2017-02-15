@@ -10,6 +10,13 @@
 		5E426E4C1E535220005C4C12 /* AuthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E426E421E535220005C4C12 /* AuthKit.framework */; };
 		5E426E511E535220005C4C12 /* AuthKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E426E501E535220005C4C12 /* AuthKitTests.swift */; };
 		5E426E531E535220005C4C12 /* AuthKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E426E451E535220005C4C12 /* AuthKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E426E5D1E535241005C4C12 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E426E5C1E535241005C4C12 /* UserManager.swift */; };
+		5E426E5F1E535565005C4C12 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E426E5E1E535565005C4C12 /* User.swift */; };
+		5E426E611E535701005C4C12 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E426E601E535701005C4C12 /* AuthResponse.swift */; };
+		5E426E641E53585C005C4C12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E426E621E53585C005C4C12 /* LoginViewController.swift */; };
+		5E426E671E535DC2005C4C12 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E426E661E535DC2005C4C12 /* LoginViewModel.swift */; };
+		CBD763C9AFC08EBBD7D07690 /* Pods_AuthKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9B330B1C5B9F209752E0B8 /* Pods_AuthKitTests.framework */; };
+		E905DBD950E64C1114434603 /* Pods_AuthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CB233AD8E5F898B5B91EAB /* Pods_AuthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E9B330B1C5B9F209752E0B8 /* Pods_AuthKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3038C9FC7D953954FA73AB4C /* Pods-AuthKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthKitTests/Pods-AuthKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		548FD4A1E92CC84359FCA096 /* Pods-AuthKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthKit/Pods-AuthKit.release.xcconfig"; sourceTree = "<group>"; };
 		5E426E421E535220005C4C12 /* AuthKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E426E451E535220005C4C12 /* AuthKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthKit.h; sourceTree = "<group>"; };
 		5E426E461E535220005C4C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E426E4B1E535220005C4C12 /* AuthKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E426E501E535220005C4C12 /* AuthKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKitTests.swift; sourceTree = "<group>"; };
 		5E426E521E535220005C4C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E426E5C1E535241005C4C12 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		5E426E5E1E535565005C4C12 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5E426E601E535701005C4C12 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		5E426E621E53585C005C4C12 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5E426E661E535DC2005C4C12 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5E426E7F1E5395BD005C4C12 /* Genome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Genome.framework; path = "../../Library/Developer/Xcode/DerivedData/AuthKit-aundxihcfwyethbqbtesgfbtirkx/Build/Products/Debug-iphonesimulator/Genome/Genome.framework"; sourceTree = "<group>"; };
+		5E426E801E5395BD005C4C12 /* Intrepid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intrepid.framework; path = "../../Library/Developer/Xcode/DerivedData/AuthKit-aundxihcfwyethbqbtesgfbtirkx/Build/Products/Debug-iphonesimulator/Intrepid/Intrepid.framework"; sourceTree = "<group>"; };
+		5E426E811E5395BD005C4C12 /* IP_UIKit_Wisdom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IP_UIKit_Wisdom.framework; path = "../../Library/Developer/Xcode/DerivedData/AuthKit-aundxihcfwyethbqbtesgfbtirkx/Build/Products/Debug-iphonesimulator/IP-UIKit-Wisdom/IP_UIKit_Wisdom.framework"; sourceTree = "<group>"; };
+		5E426E821E5395BD005C4C12 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = "../../Library/Developer/Xcode/DerivedData/AuthKit-aundxihcfwyethbqbtesgfbtirkx/Build/Products/Debug-iphonesimulator/KeychainAccess/KeychainAccess.framework"; sourceTree = "<group>"; };
+		5E426E831E5395BD005C4C12 /* Pods_AuthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_AuthKit.framework; path = "../../Library/Developer/Xcode/DerivedData/AuthKit-aundxihcfwyethbqbtesgfbtirkx/Build/Products/Debug-iphonesimulator/Pods_AuthKit.framework"; sourceTree = "<group>"; };
+		5E426E841E5395BD005C4C12 /* Pods_AuthKitTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_AuthKitTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_AuthKitTests.framework"; sourceTree = "<group>"; };
+		5E426E851E5395BD005C4C12 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = "../../Library/Developer/Xcode/DerivedData/AuthKit-aundxihcfwyethbqbtesgfbtirkx/Build/Products/Debug-iphonesimulator/RxCocoa/RxCocoa.framework"; sourceTree = "<group>"; };
+		5E426E861E5395BD005C4C12 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/AuthKit-aundxihcfwyethbqbtesgfbtirkx/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework"; sourceTree = "<group>"; };
+		C9C1B629A9EBC83BB6E438B4 /* Pods-AuthKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthKit/Pods-AuthKit.debug.xcconfig"; sourceTree = "<group>"; };
+		E0ABBFF07C4FCF73E9434490 /* Pods-AuthKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthKitTests/Pods-AuthKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5CB233AD8E5F898B5B91EAB /* Pods_AuthKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E905DBD950E64C1114434603 /* Pods_AuthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E426E4C1E535220005C4C12 /* AuthKit.framework in Frameworks */,
+				CBD763C9AFC08EBBD7D07690 /* Pods_AuthKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +84,8 @@
 				5E426E441E535220005C4C12 /* AuthKit */,
 				5E426E4F1E535220005C4C12 /* AuthKitTests */,
 				5E426E431E535220005C4C12 /* Products */,
+				A60FFEB7EA27046C1F0B35FA /* Pods */,
+				C371E67A8848BF3DB54C03BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +101,11 @@
 		5E426E441E535220005C4C12 /* AuthKit */ = {
 			isa = PBXGroup;
 			children = (
+				5E426E5E1E535565005C4C12 /* User.swift */,
+				5E426E5C1E535241005C4C12 /* UserManager.swift */,
+				5E426E601E535701005C4C12 /* AuthResponse.swift */,
+				5E426E661E535DC2005C4C12 /* LoginViewModel.swift */,
+				5E426E621E53585C005C4C12 /* LoginViewController.swift */,
 				5E426E451E535220005C4C12 /* AuthKit.h */,
 				5E426E461E535220005C4C12 /* Info.plist */,
 			);
@@ -84,6 +119,34 @@
 				5E426E521E535220005C4C12 /* Info.plist */,
 			);
 			path = AuthKitTests;
+			sourceTree = "<group>";
+		};
+		A60FFEB7EA27046C1F0B35FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9C1B629A9EBC83BB6E438B4 /* Pods-AuthKit.debug.xcconfig */,
+				548FD4A1E92CC84359FCA096 /* Pods-AuthKit.release.xcconfig */,
+				E0ABBFF07C4FCF73E9434490 /* Pods-AuthKitTests.debug.xcconfig */,
+				3038C9FC7D953954FA73AB4C /* Pods-AuthKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C371E67A8848BF3DB54C03BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E426E7F1E5395BD005C4C12 /* Genome.framework */,
+				5E426E801E5395BD005C4C12 /* Intrepid.framework */,
+				5E426E811E5395BD005C4C12 /* IP_UIKit_Wisdom.framework */,
+				5E426E821E5395BD005C4C12 /* KeychainAccess.framework */,
+				5E426E831E5395BD005C4C12 /* Pods_AuthKit.framework */,
+				5E426E841E5395BD005C4C12 /* Pods_AuthKitTests.framework */,
+				5E426E851E5395BD005C4C12 /* RxCocoa.framework */,
+				5E426E861E5395BD005C4C12 /* RxSwift.framework */,
+				E5CB233AD8E5F898B5B91EAB /* Pods_AuthKit.framework */,
+				2E9B330B1C5B9F209752E0B8 /* Pods_AuthKitTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E426E561E535220005C4C12 /* Build configuration list for PBXNativeTarget "AuthKit" */;
 			buildPhases = (
+				B038F0A68844817438A051DA /* [CP] Check Pods Manifest.lock */,
 				5E426E3D1E535220005C4C12 /* Sources */,
 				5E426E3E1E535220005C4C12 /* Frameworks */,
 				5E426E3F1E535220005C4C12 /* Headers */,
 				5E426E401E535220005C4C12 /* Resources */,
+				9021A780D741E9FB7012D6CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E426E591E535220005C4C12 /* Build configuration list for PBXNativeTarget "AuthKitTests" */;
 			buildPhases = (
+				1B36AF419EE0DF3CE7375331 /* [CP] Check Pods Manifest.lock */,
 				5E426E471E535220005C4C12 /* Sources */,
 				5E426E481E535220005C4C12 /* Frameworks */,
 				5E426E491E535220005C4C12 /* Resources */,
+				2E7B85E845EB7CCAE8CC399B /* [CP] Embed Pods Frameworks */,
+				E3245982C19EFDDBF4E4A0A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +217,7 @@
 					5E426E411E535220005C4C12 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = THP5EV5EJ9;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5E426E4A1E535220005C4C12 = {
@@ -164,6 +233,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5E426E381E535220005C4C12;
 			productRefGroup = 5E426E431E535220005C4C12 /* Products */;
@@ -193,11 +263,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B36AF419EE0DF3CE7375331 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2E7B85E845EB7CCAE8CC399B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthKitTests/Pods-AuthKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9021A780D741E9FB7012D6CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthKit/Pods-AuthKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B038F0A68844817438A051DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3245982C19EFDDBF4E4A0A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthKitTests/Pods-AuthKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E426E3D1E535220005C4C12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E426E641E53585C005C4C12 /* LoginViewController.swift in Sources */,
+				5E426E5F1E535565005C4C12 /* User.swift in Sources */,
+				5E426E611E535701005C4C12 /* AuthResponse.swift in Sources */,
+				5E426E671E535DC2005C4C12 /* LoginViewModel.swift in Sources */,
+				5E426E5D1E535241005C4C12 /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +474,9 @@
 		};
 		5E426E571E535220005C4C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9C1B629A9EBC83BB6E438B4 /* Pods-AuthKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = THP5EV5EJ9;
@@ -334,13 +489,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.intrepid.AuthKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		5E426E581E535220005C4C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548FD4A1E92CC84359FCA096 /* Pods-AuthKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = THP5EV5EJ9;
@@ -359,6 +517,7 @@
 		};
 		5E426E5A1E535220005C4C12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0ABBFF07C4FCF73E9434490 /* Pods-AuthKitTests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = THP5EV5EJ9;
 				INFOPLIST_FILE = AuthKitTests/Info.plist;
@@ -371,6 +530,7 @@
 		};
 		5E426E5B1E535220005C4C12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3038C9FC7D953954FA73AB4C /* Pods-AuthKitTests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = THP5EV5EJ9;
 				INFOPLIST_FILE = AuthKitTests/Info.plist;
@@ -400,6 +560,7 @@
 				5E426E581E535220005C4C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E426E591E535220005C4C12 /* Build configuration list for PBXNativeTarget "AuthKitTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +569,7 @@
 				5E426E5B1E535220005C4C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

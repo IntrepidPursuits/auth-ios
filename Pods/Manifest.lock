@@ -1,0 +1,42 @@
+PODS:
+  - Genome (3.0.2):
+    - Genome/Default (= 3.0.2)
+  - Genome/Core (3.0.2):
+    - Genome/Packages
+  - Genome/Default (3.0.2):
+    - Genome/Core
+    - Genome/Foundation
+  - Genome/Foundation (3.0.2):
+    - Genome/Core
+  - Genome/Packages (3.0.2)
+  - Intrepid (0.6.6):
+    - Intrepid/Core (= 0.6.6)
+  - Intrepid/Core (0.6.6):
+    - IP-UIKit-Wisdom (= 0.0.9)
+  - Intrepid/Rx (0.6.6):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - IP-UIKit-Wisdom (0.0.9)
+  - KeychainAccess (3.0.1)
+  - RxCocoa (3.1.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.1.0)
+
+DEPENDENCIES:
+  - Genome
+  - Intrepid
+  - Intrepid/Rx
+  - KeychainAccess
+  - RxSwift
+
+SPEC CHECKSUMS:
+  Genome: 44584c1e971899a5a4b20ee87faee452a5f1ac1a
+  Intrepid: b5e7cba2e2ab29a03f4195bb13f2d7f9a516c2e0
+  IP-UIKit-Wisdom: cd9838571e97427a0c61c05d856eaaca9afd7c1a
+  KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
+  RxCocoa: 50d7564866da9299161e86a263ce12a0873904d8
+  RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
+
+PODFILE CHECKSUM: 3d46eb6db9a4d78bbb0c8f40adb124aa9c1c1bb2
+
+COCOAPODS: 1.1.1
